@@ -488,3 +488,4 @@ local.properties
 !.vscode/extensions.json
 
 /.idea/
+/target/
