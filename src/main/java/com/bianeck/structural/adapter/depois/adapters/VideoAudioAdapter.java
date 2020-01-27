@@ -10,7 +10,7 @@ public class VideoAudioAdapter implements VideoPlayer {
 
     private AudioPlayer audioPlayer;
 
-    public VideoAudioAdapter(ArquivoDeMidia arquivoDeMidia) throws ArquivoNaoSuportadoException {
+    public VideoAudioAdapter(ArquivoDeMidia arquivoDeMidia) {
         switch (arquivoDeMidia.getTipoDeArquivo()) {
             case MP3:
                 audioPlayer = new Mp3Player();
@@ -21,7 +21,7 @@ public class VideoAudioAdapter implements VideoPlayer {
     }
 
     @Override
-    public String play(ArquivoDeMidia arquivoDeMidia) throws ArquivoNaoSuportadoException {
+    public String play(ArquivoDeMidia arquivoDeMidia) {
         switch (arquivoDeMidia.getTipoDeArquivo()) {
             case MP3:
                 return audioPlayer.play(arquivoDeMidia);

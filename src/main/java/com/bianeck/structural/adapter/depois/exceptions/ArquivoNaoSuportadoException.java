@@ -2,7 +2,7 @@ package com.bianeck.structural.adapter.depois.exceptions;
 
 import com.bianeck.structural.adapter.depois.ArquivoDeMidia;
 
-public class ArquivoNaoSuportadoException extends Exception{
+public class ArquivoNaoSuportadoException extends RuntimeException{
 
     private ArquivoDeMidia arquivoDeMidia;
 

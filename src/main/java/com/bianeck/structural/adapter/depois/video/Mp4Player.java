@@ -10,7 +10,7 @@ public class Mp4Player implements VideoPlayer {
     private VideoAudioAdapter videoAudioAdapter;
 
     @Override
-    public String play(ArquivoDeMidia arquivoDeMidia) throws ArquivoNaoSuportadoException {
+    public String play(ArquivoDeMidia arquivoDeMidia) {
         switch (arquivoDeMidia.getTipoDeArquivo()) {
             case MP4:
                 return reproduz(arquivoDeMidia, TipoDeArquivo.MP4);

@@ -6,7 +6,7 @@ import com.bianeck.structural.adapter.depois.exceptions.ArquivoNaoSuportadoExcep
 
 public class Mp3Player implements AudioPlayer {
     @Override
-    public String play(ArquivoDeMidia arquivoDeMidia) throws ArquivoNaoSuportadoException {
+    public String play(ArquivoDeMidia arquivoDeMidia) {
         switch (arquivoDeMidia.getTipoDeArquivo()) {
             case MP3:
                 return reproduz(arquivoDeMidia, TipoDeArquivo.MP3);

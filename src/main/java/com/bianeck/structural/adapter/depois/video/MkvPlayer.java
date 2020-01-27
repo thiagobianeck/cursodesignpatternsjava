@@ -6,7 +6,7 @@ import com.bianeck.structural.adapter.depois.exceptions.ArquivoNaoSuportadoExcep
 
 public class MkvPlayer implements VideoPlayer {
     @Override
-    public String play(ArquivoDeMidia arquivoDeMidia) throws ArquivoNaoSuportadoException {
+    public String play(ArquivoDeMidia arquivoDeMidia) {
         switch (arquivoDeMidia.getTipoDeArquivo()) {
             case MKV:
                 return reproduz(arquivoDeMidia, TipoDeArquivo.MKV);
